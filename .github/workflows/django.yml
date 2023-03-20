@@ -42,7 +42,7 @@ jobs:
       run: |
         sudo service start postgresql
         pip install -r requirements.txt
-        createdb ecom_app_db
+        createdb ecom_db
         python manage.py migrate
     - name: Run Tests
       run: |

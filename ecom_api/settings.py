@@ -80,7 +80,10 @@ WSGI_APPLICATION = 'ecom_api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
+        # 'USER':'postgres',
+        # 'PASSWORD': 'postgres',
         'NAME': 'ecom_db',
+        'PORT' : '5432'
     }
 }
 
