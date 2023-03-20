@@ -38,6 +38,9 @@ jobs:
     - name: Install Dependencies
       run: |
         sudo apt-get install libpq-dev
+    - name: Postgres commands
+      run: |
+        sudo service start postgresql
         pip install -r requirements.txt
         createdb ecom_app_db
         python manage.py migrate
