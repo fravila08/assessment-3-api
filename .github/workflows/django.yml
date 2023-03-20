@@ -28,6 +28,7 @@ jobs:
     - uses: postgresql-action@v1
       with:
         postgresql version: 14
+    - name: Run migrations
       run: |
         python manage.py migrate
     - name: Run Tests
