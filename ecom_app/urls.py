@@ -5,6 +5,8 @@ from . import views
 urlpatterns = [
     # [ GET ]
     path('products/', views.all_products, name= 'products'),
+    
+    # [ GET ]
     path('products/<str:name>/', views.product_by_name, name ='product'),
     
     # [ GET ]
