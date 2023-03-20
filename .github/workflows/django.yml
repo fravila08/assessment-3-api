@@ -40,7 +40,6 @@ jobs:
         sudo apt-get install libpq-dev
     - name: Postgres commands
       run: |
-        sudo service start postgresql
         pip install -r requirements.txt
         createdb ecom_db
         python manage.py migrate
